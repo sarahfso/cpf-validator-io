@@ -22,6 +22,7 @@
         <div class="container">
             <h1 class="page-header">Validador de CPF</h1>
             <p>Verifique a validade de qualquer CPF. Fácil e rápido!</p>
+            <a href="https://www.youtube.com/watch?v=15Bw0duulMQ">Quer saber como? Clique aqui.</a>
         </div>
     </div>
     <div class="container formulario">
@@ -29,8 +30,14 @@
             <div class="form-group">
                 <div class="input-group input-group-lg">
                     <span class="input-group-addon" id="sizing-addon1">CPF</span>
-                    <input type="text" class="form-control" placeholder="Digite o CPF a validar" 
-                    aria-describedby="sizing-addon1" id="cpf_informado">
+                    <input 
+                        type="text" 
+                        class="form-control" 
+                        placeholder="Digite o CPF a validar" 
+                        aria-describedby="sizing-addon1" 
+                        id="cpf_informado" 
+                        onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+                        maxlength="11">
                 </div>
                 <small class="form-text text-muted">*Digite somente números</small>
             </div>

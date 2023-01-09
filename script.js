@@ -1,8 +1,8 @@
-console.log("Scrips working!")
+//console.log("Script is working!")
 
 function validaCPF(cpf) {
  
-    console.log(cpf);
+    //console.log(cpf);
     if(cpf.length != 11) {
         return false;  
     }
